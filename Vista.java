@@ -6,7 +6,7 @@ public class Vista {
         try{
             System.out.println("Elija una de las siguientes opciones:");
             System.out.println("1.Iniciar un programa");
-            System.out.println("2.Mostrar memoria");
+            System.out.println("2.Mostrar memoria en MB");
             System.out.println("3.Mostrar programas en ejecución");
             System.out.println("4.Mostrar cola de ejecución");
             System.out.println("5.Mostrar espacios");
@@ -16,6 +16,9 @@ public class Vista {
         }catch(Exception e){
             return 0;
         }
+    }
+    public void mostrar_cola(String s){
+        System.out.println(s);
     }
     public void elegir_programa(){
         System.out.println("Elija uno de los programas disponibles:");
@@ -58,5 +61,31 @@ public class Vista {
     }
     public void mostrar_espacios(String s){
         System.out.println(s);
+    }
+    public void ciclo_reloj(){
+        System.out.println("         #@@@*   *@@@#        ");
+        System.out.println("       @@      @      @@      ");
+        System.out.println("     @@        @        @@    ");
+        System.out.println("    @@         @         @@   ");
+        System.out.println("    @          (@@@@@@    @   ");
+        System.out.println("    @@                   @@   ");
+        System.out.println("     @@                 @@    ");
+        System.out.println("       @@             @@      ");
+        System.out.println("         #@@@,   *@@@(        ");
+    }
+    public void programas_ejecucion(String s){
+        System.out.println(s);
+    }
+    public void memoria_total(int m){
+        System.out.println("Memoria total: "+m+"MB");
+    }
+    public void memoria_uso(int m){
+        System.out.println("Memoria en uso: "+m+"MB");
+    }
+    public void memoria_libre(int m){
+        System.out.println("Memoria libre: "+m+"MB");
+    }
+    public void separador(){
+        System.out.println("\n**********************************************\n");
     }
 }

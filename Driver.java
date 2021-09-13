@@ -55,23 +55,34 @@ public class Driver {
                             }
                             memoria.iniciar_programa(rprograma-1);
                         }else{
+                            v.separador();
                             v.no_programas();
+                            v.separador();
                         }
                         break;
                     case 2://mostrar memoria
-                        
+                        v.separador();
+                        v.memoria_total(memoria.getMemoria());
+                        v.memoria_uso(memoria.getMemoria_uso());
+                        v.memoria_libre(memoria.getMemoria_libre());
+                        v.separador();
                         break;
                     case 3://mostrar programas en ejecucion
-                        
+                        v.programas_ejecucion(memoria.programas_en_ejecucion());
                         break;
                     case 4://mostrar cola de ejecucion
-                        
+                        v.separador();
+                        v.mostrar_cola(memoria.getCola());
+                        v.separador();
                         break;
                     case 5://Mostrar espacios
                         v.mostrar_espacios(memoria.mostrar_espacios());
                         break;
                     case 6://ciclos de reloj
-                        
+                        v.separador();
+                        v.ciclo_reloj();
+                        memoria.ciclo_de_reloj();
+                        v.separador();
                         break;
                     case 7://salir              
                         break;               

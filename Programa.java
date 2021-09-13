@@ -16,4 +16,7 @@ public class Programa {
     public int getCiclos(){
         return ciclos;
     }
+    public void setCiclos(){
+        ciclos--;
+    }
 }
