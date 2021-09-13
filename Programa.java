@@ -10,4 +10,10 @@ public class Programa {
     public String getNombre(){
         return nombre;
     }
+    public int getEspacio(){
+        return espacio;
+    }
+    public int getCiclos(){
+        return ciclos;
+    }
 }

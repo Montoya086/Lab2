@@ -56,4 +56,7 @@ public class Vista {
     public void ingrese_valor_valido(){
         System.out.println("Ingrese un valor valido");
     }
+    public void mostrar_espacios(String s){
+        System.out.println(s);
+    }
 }

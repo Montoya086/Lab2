@@ -53,6 +53,7 @@ public class Driver {
                                 }
                                 rprograma= v.pedir_programa();
                             }
+                            memoria.iniciar_programa(rprograma-1);
                         }else{
                             v.no_programas();
                         }
@@ -67,7 +68,7 @@ public class Driver {
                         
                         break;
                     case 5://Mostrar espacios
-                        
+                        v.mostrar_espacios(memoria.mostrar_espacios());
                         break;
                     case 6://ciclos de reloj
                         
