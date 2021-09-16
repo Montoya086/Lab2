@@ -1,8 +1,11 @@
-import java.io.InputStream;
 import java.util.Scanner;
 public class Vista {
     Scanner sc = new Scanner(System.in);
-    public int menu(){
+    
+    /** 
+     * @return int
+     */
+    public int menu(){//despliega el menu
         try{
             System.out.println("Elija una de las siguientes opciones:");
             System.out.println("1.Iniciar un programa");
@@ -17,22 +20,39 @@ public class Vista {
             return 0;
         }
     }
-    public void mostrar_cola(String s){
+    
+    /** 
+     * @param s
+     */
+    public void mostrar_cola(String s){//muestra la cola de ejecución
         System.out.println(s);
     }
-    public void elegir_programa(){
+    public void elegir_programa(){//mensaje para elegir los programas
         System.out.println("Elija uno de los programas disponibles:");
     }
-    public void lista_programas(int i, String nombre){
+    
+    /** 
+     * @param i
+     * @param nombre
+     */
+    public void lista_programas(int i, String nombre){//mostrar la lista de programas
         System.out.println(i+". "+nombre);
     }
-    public int pedir_programa(){
+    
+    /** 
+     * @return int
+     */
+    public int pedir_programa(){//ingreso de el programa
         return Integer.parseInt(sc.nextLine());
     }
-    public void no_programas(){
+    public void no_programas(){//mensaje: no hay programas
         System.out.println("Actualmente no hay programas disponibles");
     }
-    public int pedir_tipo_memoria(){
+    
+    /** 
+     * @return int
+     */
+    public int pedir_tipo_memoria(){// listado de memorias disponibles
         try{
             System.out.println("Elija una de las siguientes opciones de memoria:");
             System.out.println("1.SDR");
@@ -42,7 +62,11 @@ public class Vista {
             return 0;
         }
     }
-    public int pedir_memoria(){
+    
+    /** 
+     * @return int
+     */
+    public int pedir_memoria(){//pedir el tamaño de la memoria
         try{
             System.out.println("Elija una de las siguientes opciones de tamaño:");
             System.out.println("1. 4GB");
@@ -56,13 +80,17 @@ public class Vista {
             return 0;
         }
     }
-    public void ingrese_valor_valido(){
+    public void ingrese_valor_valido(){//mensaje de ingresar un valor valido
         System.out.println("Ingrese un valor valido");
     }
-    public void mostrar_espacios(String s){
+    
+    /** 
+     * @param s
+     */
+    public void mostrar_espacios(String s){//mostrar los espacios de forma visual
         System.out.println(s);
     }
-    public void ciclo_reloj(){
+    public void ciclo_reloj(){//un relojito uwu (para los ciclos)
         System.out.println("         #@@@*   *@@@#        ");
         System.out.println("       @@      @      @@      ");
         System.out.println("     @@        @        @@    ");
@@ -73,19 +101,43 @@ public class Vista {
         System.out.println("       @@             @@      ");
         System.out.println("         #@@@,   *@@@(        ");
     }
-    public void programas_ejecucion(String s){
+    
+    /** 
+     * @param s
+     */
+    public void programas_ejecucion(String s){//mostrar los programas en ejecucion
         System.out.println(s);
     }
-    public void memoria_total(int m){
+    
+    /** 
+     * @param m
+     */
+    public void memoria_total(int m){//mostrar memoria total
         System.out.println("Memoria total: "+m+"MB");
     }
-    public void memoria_uso(int m){
+    
+    /** 
+     * @param m
+     */
+    public void memoria_uso(int m){//mostrar memoria en uso
         System.out.println("Memoria en uso: "+m+"MB");
     }
-    public void memoria_libre(int m){
+    
+    /** 
+     * @param m
+     */
+    public void memoria_libre(int m){//mostrar memoria libre
         System.out.println("Memoria libre: "+m+"MB");
     }
-    public void separador(){
+    public void separador(){//separador de acciones
         System.out.println("\n**********************************************\n");
+    }
+    
+    /** 
+     * @return int
+     */
+    public int numero_programas_inicio(){//ingreso de la cantidad de programas para iniciar la memoria
+        System.out.println("Ingrese el numero de programas con los que iniciará la memoria: ");
+        return Integer.parseInt(sc.nextLine());
     }
 }

@@ -5,13 +5,25 @@ public class Espacio_memoria {
         programa = null;
         espacio = 64;
     }
-    public int getEspacio(){
+    
+    /** 
+     * @return int
+     */
+    public int getEspacio(){//obtener el espacio
         return espacio;
     }
-    public Programa getPrograma(){
+    
+    /** 
+     * @return Programa
+     */
+    public Programa getPrograma(){//obtener el programa dentro del espacio
         return programa;
     }
-    public void setPrograma(Programa programa){
+    
+    /** 
+     * @param programa
+     */
+    public void setPrograma(Programa programa){//colocar un pedazo del programa
         this.programa=programa;
     }
 }
