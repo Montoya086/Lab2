@@ -1,3 +1,11 @@
+/*
+
+ Autor: Andrés Estuardo Montoya Wilhelm
+ Programa: Archivos.java
+ Creación: 10/9/2021   Modificación: 17/9/2021
+ Lenguaje: Java
+    
+*/
 import java.io.File;
 import java.io.FileReader;
 import java.io.BufferedReader;

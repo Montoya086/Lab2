@@ -1,3 +1,11 @@
+/*
+
+ Autor: Andrés Estuardo Montoya Wilhelm
+ Programa: Vista.java
+ Creación: 10/9/2021   Modificación: 17/9/2021
+ Lenguaje: Java
+    
+*/
 import java.util.Scanner;
 public class Vista {
     Scanner sc = new Scanner(System.in);

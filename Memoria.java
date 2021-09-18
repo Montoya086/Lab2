@@ -1,3 +1,11 @@
+/*
+
+ Autor: Andrés Estuardo Montoya Wilhelm
+ Programa: Memoria.java
+ Creación: 10/9/2021   Modificación: 17/9/2021
+ Lenguaje: Java
+    
+*/
 import java.util.ArrayList;
 import java.util.Queue;
 import java.util.LinkedList;

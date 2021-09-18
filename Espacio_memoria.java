@@ -1,3 +1,11 @@
+/*
+
+ Autor: Andrés Estuardo Montoya Wilhelm
+ Programa: Espacio_memoria.java
+ Creación: 10/9/2021   Modificación: 17/9/2021
+ Lenguaje: Java
+    
+*/
 public class Espacio_memoria {
     int espacio;
     Programa programa;
